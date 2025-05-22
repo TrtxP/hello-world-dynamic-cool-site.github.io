@@ -1,0 +1,103 @@
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        body.light-theme {
+            background: linear-gradient(135deg, #6B8E23, #008080);
+            color: #ffffff;
+        }
+
+        body.dark-theme {
+            background: linear-gradient(135deg, #013220, #004d26);
+            color: #000000;
+        }
+
+        #messageBox {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFD700;
+            transition: opacity 1.3s ease;
+            opacity: 0;
+        }
+
+        .fade-in {
+            opacity: 1;
+        }
+
+        h1 {
+            background: #6B8E23;
+            border-radius: 5px;
+            padding: 15px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        h1:hover {
+            background: #556B2F;
+            transform: scale(1.1);
+        }
+
+        h2 {
+            background: #008080;
+            border-radius: 5px;
+            padding: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        h2:hover {
+            background: #005959;
+            transform: scale(1.1);
+        }
+
+        img {
+            border: 5px solid #ffffff;
+            border-radius: 15px;
+            transition: 4.5s ease-out;
+        }
+
+        img:hover {
+            transform: scale(1.0789) rotateY(-720deg);
+            box-shadow: 0 0 15px #ffffff;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #ffffff;
+            color: #008080;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #008080;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 15px;
+            }
+
+            .container > * {
+                justify-self: center;
+            }
+        }
